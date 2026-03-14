@@ -4,6 +4,15 @@
     margin: 0;
     box-sizing: border-box;
 
+    /* General styles */
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* Generic project style */
+        color: #3a3a3a  ;
+    }
+
  }
 
 /* Header */
@@ -15,6 +24,8 @@ header {
 /* Main content */
 main {
     background: lightblue;
+    /* Make main element take up any surplus spave to footer down*/
+    flex: 1 0 auto;
 }
 
 /* Footer */
