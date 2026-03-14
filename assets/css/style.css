@@ -17,14 +17,19 @@
         flex-direction: column;
         font-family: "Lato", sans-serif;
         /* Generic project style */
-        color: #3a3a3a  ;
+        color: #3a3a3a;
     }
 
  }
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    padding: o 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px  #3a3a3a;;
     
 }
 h1 {
