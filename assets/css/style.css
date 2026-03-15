@@ -79,12 +79,14 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
+    padding-right: 1rem;
 }
 /* Main content */
 main {
     background: lightblue;
     /* Make main element take up any surplus spave to footer down*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 h1 {
