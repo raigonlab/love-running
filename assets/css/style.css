@@ -97,12 +97,18 @@ nav {
 
 /* Main content */
 main {
-    background: lightblue;
+    
     /* Make main element take up any surplus spave to footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
-}
+    }
 
+    #hero {
+        height: 600px;
+        width: 100%;
+        background: url(../images/hero-image.webp) no-repeat center center/cover;
+    }
+   
 h1 {
     padding: 0 1rem;
 
