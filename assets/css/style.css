@@ -54,6 +54,8 @@ h1 {
 #menu > li {
     margin-bottom: 1em;
 }
+
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
@@ -81,6 +83,8 @@ nav {
     font-size: 2rem;
     padding-right: 1rem;
 }
+
+
 /* Main content */
 main {
     background: lightblue;
@@ -117,6 +121,16 @@ footer {
     }
     .nav-toggle-label {
         display: none;
+    }
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+    /* Main content */
+    main {
+        /* Push main content down to accomodate larger herader */
+        margin-top: 79px;
     }
 
 }
