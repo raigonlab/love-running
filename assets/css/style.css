@@ -187,6 +187,7 @@ margin-left: 20px;
     margin-bottom: 20px;
     
     /* makes the square image into a circle */
+    aspect-ratio: 1 / 1;
     max-width: 300px;
     max-height: 300px;
     border-radius: 50%;
@@ -249,11 +250,37 @@ margin-left: 20px;
         width: 300px;
         right: 50px;
     }
+/* resosn section */
+    #benefits-physical, #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benefits-physical, #benefits-mental > div {
+        width: 75% ;
+    }
+    #benefits-mental > div {
+        text-align: end;
+        align-self: flex-end;
+    }
+
+    #benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
 }
 
 /*Larger devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Reasons section */
+    #benefits {
+        display: flex;
     }
 }
