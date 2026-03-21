@@ -248,6 +248,12 @@ flex-wrap: wrap;
     background-color:  rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
+    /* This will not wrap on screens of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creats a grid of meetup time divs over the background image */
+    border: 2px solid white
 }
 #times h3 {
     /*Override  the heading colour set in general styles */
