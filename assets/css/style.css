@@ -26,6 +26,7 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+/* Hide section heading with utility class */
 .hidden-heading {
     display: none;
 }
