@@ -164,7 +164,7 @@ main {
     justify-content: center;
 }
 
-/* Gallety page */
+/* Gallery page */
 #photos img {
     width: 100%;
     line-height: 1em;
@@ -280,10 +280,7 @@ flex-wrap: wrap;
     /*Override  the heading colour set in general styles */
     color:#fafafa
 }
-/* Gallery */
-#photos {
-    column-count: 3;
-}
+
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
@@ -292,6 +289,8 @@ flex-wrap: wrap;
     /* Gallery */
 #photos {
     column-count: 4;
+    column-gap: 0;
+}
 }
 
 @media screen and (min-width: 1200px) {    
@@ -319,5 +318,10 @@ flex-wrap: wrap;
 
     #benefits-physical > div {
         align-self: flex-end;
+    }
+    /* Gallery */
+    #photos {
+        column-count: 4;
+        column-gap: 0;
     }
 }
