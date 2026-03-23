@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <!-- Meta tags for search engines -->
   <meta name="description"
-    content="Love Running. Club for running in Dublin, Irland. Urban running, trail running. Dublin dockland and Phoenix Park" />
-  <meta name="keywords" content="love running, run, running club, runners, Irland, Dublin, sport, exercise" />
+    content="Love Running. Club for running in Dublin, Ireland. Urban running, trail running. Dublin Docklands and Phoenix Park." />
+  <meta name="keywords"
+    content="love running, run, running club, runners, Ireland, Dublin, sport, exercise" />
 
   <!-- Title -->
   <title>Love Running</title>
+
   <!-- Favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon-zip/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-zip/favicon-32x32.png" />
@@ -18,167 +21,117 @@
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<!-- Header -->
 
 <body>
+  <!-- Header -->
   <header>
     <a href="index.html">
       <h1 id="logo">Love Running</h1>
     </a>
-    <input type="checkbox" id="nav-toggle" name="nav-toggle" />
-    <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
 
+    <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <i class="fa-solid fa-bars"></i>
+    </label>
 
     <nav>
       <ul id="menu">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="signup.html">Sing Up</a></li>
+        <li><a href="signup.html" class="active">Sign Up</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main content -->
   <main>
-    <section id="hero">
-      <div id="cover-text">
-        <h2>Love Running</h2>
-        <h3>Dublin dockland & Phoenix Park</h3>
-      </div>
+    <section id="signup">
+      <h2>
+        <i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!
+      </h2>
+
+      <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+
+        <label for="first-name">First Name</label>
+        <input type="text" name="first_name" id="first-name" class="text-input" required>
+
+        <br>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last_name" id="last-name" class="text-input" required>
+
+        <br>
+
+        <label for="email-address">Email Address</label>
+        <input type="email" name="email_address" id="email-address" class="text-input" required>
+
+        <br>
+
+        <div class="radio-buttons">
+          <label for="road">Road</label>
+          <input type="radio" name="running-preference" id="road" value="road" required>
+
+          <br>
+
+          <label for="trail">Trail</label>
+          <input type="radio" name="running-preference" id="trail" value="trail">
+
+          <br>
+
+          <label for="both">Both</label>
+          <input type="radio" name="running-preference" id="both" value="both">
+        </div>
+
+        <!-- Signup - Join button -->
+        <div>
+          <button class="join-button" type="submit">Let's Run!</button>
+        </div>
+
+      </form>
     </section>
-
-    <!-- sectiom reasons and benefits -->
-    <section id="reasons">
-      <h2>Why Love Running With Us? </h2>
-
-      <div id="benefits">
-
-        <div id="benefits-physical">
-
-          <div>
-            <h3>FEEL HEALTHY<i class="fa-solid fa-heart-pulse"></i></h3>
-           
-
-            <hr>
-            <p>Since it improves aerobic fitness, running is a great
-              way to help improve your cardiovascular health.
-              Plus, it burns calories and can build strength.</p>
-          </div>
-
-          <div>
-            <h3>FEEL STRONG<i class="fa-solid fa-dumbbell"></i></h3>
-
-
-
-            <hr>
-            <p>Running strengthens your heart by pumping blood more effectively
-              through your body.</p>
-          </div>
-        </div>
-
-
-        <div id="benefits-mental">
-          <div>
-            <h3>FEEL FREE<i class="fa-brands fa-fly"></i></h3>
-
-
-
-            <hr>
-            <p>Physical exercise, running included, is known to release endorphins in the brain.
-              Endorphins make you more energetic, more awake and, yes, happier.</p>
-          </div>
-
-          <div>
-            <h3>GET SOCIAL <i class="fa-solid fa-globe"></i></h3>
-
-            <hr>
-            <p>When we run with others, we can run farther and faster more easily.
-              Social running can pull you out of a running funk or low mood, and inspire you to try new events.</p>
-          </div>
-        </div>
-        <div id="benefits-image">
-          <div id="circle-cover-bg"></div>
-        </div>
-      </div>
-
-      </div>
-    </section>
-    <!-- Meetup times section -->
-    <section id="meetups">
-      <!-- "hidden-heading" Hide section heading with utility class" -->
-      <h2 class="hidden-heading">Meet-up Time</h2>
-      <div id="times">
-        <div>
-          <h3>Urban <i class="fa-solid fa-city"></i></h3>
-          <p>Monday</p>
-          <p>5K</p>
-          <p>The Marker Hotel</p>
-          <p>18:30</p>
-        </div>
-        <div>
-          <h3>Trail <i class="fa-solid fa-tree"></i></h3>
-          <p>Wednesday</p>
-          <p>10K</p>
-          <p>The Phoenix Park</p>
-          <p>18:30</p>
-        </div>
-        <div>
-          <h3>Urban <i class="fa-solid fa-city"></i></h3>
-          <p>Friday</p>
-          <p>5K</p>
-          <p>The Marker Hotel</p>
-          <p>18:30</p>
-        </div>
-        <div>
-          <h3>Trail <i class="fa-solid fa-tree"></i></h3>
-          <p>Saturday</p>
-          <p>10K</p>
-          <p>The Phoenix Park</p>
-          <p>09:30</p>
-        </div>
-        <div>
-          <h3>Coffee <i class="fa-solid fa-mug-hot"></i></h3>
-          <p>Sunday</p>
-          <p>0K</p>
-          <p>The Marker Hotel</p>
-          <p>11:30</p>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- Footer -->
   <footer>
     <ul id="social-networks">
+
       <!-- Facebook -->
       <li>
         <a href="https://facebook.com/" target="_blank" rel="noopener"
-          aria-label="visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-      </li>
-      <!-- x - twiter -->
-      <li>
-        <a href="https://x.com/" target="_blank" rel="noopener"
-          aria-label="visit our X-Twiter page (opens in a new tab)"><i class="fa-brands fa-square-x-twitter"></i></a>
-      </li>
+          aria-label="Visit our Facebook page (opens in a new tab)">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
       </li>
 
-      <!-- Youtube -->
+      <!-- X (Twitter) -->
       <li>
-        <a href="https://Youtube.com/" target="_blank" rel="noopener"
-          aria-label="visit our Youtube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener"
+          aria-label="Visit our X (Twitter) page (opens in a new tab)">
+          <i class="fa-brands fa-square-x-twitter"></i>
+        </a>
+      </li>
+
+      <!-- YouTube -->
+      <li>
+        <a href="https://youtube.com/" target="_blank" rel="noopener"
+          aria-label="Visit our YouTube page (opens in a new tab)">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
       </li>
 
       <!-- Instagram -->
       <li>
-        <a href="https://Instagram.com/" target="_blank" rel="noopener"
-          aria-label="visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener"
+          aria-label="Visit our Instagram page (opens in a new tab)">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
       </li>
 
     </ul>
   </footer>
-  <!-- Font Awesome kit  -->
-  <script src="https://kit.fontawesome.com/0bfdc7ff3a.js" crossorigin="anonymous"></script>
-</body>
 
+  <!-- Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/0bfdc7ff3a.js" crossorigin="anonymous"></script>
+
+</body>
 </html>
